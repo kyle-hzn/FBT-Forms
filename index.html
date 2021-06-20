@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire Protection Express</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,700;0,800;1,800&display=swap">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./form.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-v4-grid-only@1.0.0/dist/bootstrap-grid.min.css">
+</head>
+<body>
+    <div class="form__hero">
+        <div class="form__herowrap container">
+            <div class="offset-md-3 col-md-6 mt--80 mb--80">
+                <div class="text--center mb--40">
+                    <img class="login__logo" src="./images/logo-fbt.svg" alt="Logo Fichet-Bauche Télésurveillance">
+                </div>
+                <p class="title--three title--three--black-dark mb--16">
+                    Ajouter un nouvel appareil
+                </p>
+                <p class="text--16 text--16--black-light mb--32">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem necessitatibus magni beatae recusandae earum ipsa totam omnis adipisci praesentium modi deleniti possimus quaerat, exercitationem sunt sequi. Vel aspernatur nihil porro!
+                </p>
+                <form id="create-product" action="form-product">
+                    <div class="form-row">
+                        <div class="input-wrap">
+                            <label for="form-id" class="text--16 mb--8">Nom / Identification du PTI</label>
+                            <input id="form-id" class="input--text2" type="text" placeholder="Nom / Identification du PTI" required>
+                        </div>
+                        <div class="input-wrap">
+                            <label for="form-address" class="text--16 mb--8">Rue</label>
+                            <input id="form-address" class="input--text2" type="text" placeholder="Rue" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="input-wrap">
+                            <label for="form-address-supp" class="text--16 mb--8">Complément d'adresse</label>
+                            <input id="form-address-supp" class="input--text2" type="text" placeholder="Complément d'adresse" required>
+                        </div>
+                        <div class="input-wrap">
+                            <label for="form-cp" class="text--16 mb--8">Code postal</label>
+                            <input id="form-cp" class="input--text2" type="text" placeholder="Code postal" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="input-wrap">
+                            <label for="form-city" class="text--16 mb--8">Ville</label>
+                            <input id="form-city" class="input--text2" type="text" placeholder="Ville" required>
+                        </div>
+                        <div class="input-wrap">
+                            <label for="form-phone" class="text--16 mb--8">Téléphone du porteur</label>
+                            <input id="form-phone" class="input--text2" type="text" placeholder="Téléphone du porteur" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="input-wrap">
+                            <label for="form-firstname-1" class="text--16 mb--8">Nom du contact 1</label>
+                            <input id="form-firstname-1" class="input--text2" type="text" placeholder="Nom du contact 1" required>
+                        </div>
+                        <div class="input-wrap">
+                            <label for="form-lastname-1" class="text--16 mb--8">Prénom du contact 1</label>
+                            <input id="form-lastname-1" class="input--text2" type="text" placeholder="Prénom du contact 1" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="input-wrap">
+                            <label for="form-phonenb-1" class="text--16 mb--8">Tel de contact 1</label>
+                            <input id="form-phonenb-1" class="input--text2" type="text" placeholder="Tel de contact 1" required>
+                        </div>
+                        <div class="input-wrap">
+                            <label for="form-lastname-2" class="text--16 mb--8">Nom du contact 2</label>
+                            <input id="form-lastname-2" class="input--text2" type="text" placeholder="Nom du contact 2" required>
+                        </div>
+                    </div>
+                    <div class="form-row mb--16">
+                        <div class="input-wrap">
+                            <label for="form-firstname-2" class="text--16 mb--8">Prénom du contact 2</label>
+                            <input id="form-firstname-2" class="input--text2" type="text" placeholder="Prénom du contact 2" required>
+                        </div>
+                        <div class="input-wrap">
+                            <label for="form-phonenb-2" class="text--16 mb--8">Tel de contact 2</label>
+                            <input id="form-phonenb-2" class="input--text2" type="text" placeholder="Tel de contact 2" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <select name="select-products" id="form-select" class="input--text2">
+                            <option value="dog">Prom</option>
+                            <option value="cat">600002</option>
+                        </select>
+                    </div>
+                    <input class="btn--primary mb--64" type="submit" value="Ajouter cet appareil">
+                </form>
+                <p class="subtitle--one subtitle--one--black-dark mb--32">
+                    Vos appareils disponibles
+                </p>
+                <div class="form-table">
+                    <div class="form-table-row-head">
+                        <div class="form-table__l text--center">
+                            <p class="text--14 text--14--grey-brand text--strong">
+                                Action
+                            </p>
+                        </div>
+                        <div class="form-table__r text--center">
+                            <p class="text--14 text--14--grey-brand text--strong">
+                                Identifiant produit
+                            </p>
+                        </div>
+                    </div>
+                    <div class="form-table-row">
+                        <div class="form-table__l text--center">
+                            <p class="text--14 product-page__minicart__remove">
+                                ÉDITER
+                            </p>
+                        </div>
+                        <div class="form-table__r text--center">
+                            <p class="text--14 text--14--black-dark">
+                                1234567
+                            </p>
+                        </div>
+                    </div>
+                    <div class="form-table-row">
+                        <div class="form-table__l text--center">
+                            <p class="text--14 product-page__minicart__remove">
+                                ÉDITER
+                            </p>
+                        </div>
+                        <div class="form-table__r text--center">
+                            <p class="text--14 text--14--black-dark">
+                                1234567
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/bouncer@1/dist/bouncer.polyfills.min.js"></script>
+<script>
+    var validate = new Bouncer('create-product');
+</script>
+</html>
